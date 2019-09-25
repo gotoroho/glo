@@ -57,7 +57,7 @@ html, body {
   top: 0;
   width: 100%;
   margin: 0;
-  padding: 2rem 0;
+  padding: 20px 0;
   text-align: center;
   z-index: 200;
   color: #fff;
@@ -68,18 +68,54 @@ html, body {
   font-weight: 700;
 }
 
-.score {
+.scoreContainer {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   margin: 0;
-  padding: 1rem 0;
+  padding: 10px 0;
   text-align: center;
   z-index: 200;
-  font-size: 1.5rem;
   color: skyblue;
   background-color: black;
   font-family: sans-serif;
   font-weight: 500;
+}
+
+.scoreContainer div {
+  display: inline;
+  font-size: 0.8rem;
+}
+
+.scoreContainer p {
+  z-index: 300;
+}
+
+.audio {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.levelSelect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 5px;
+  text-align: center;
+  z-index: 200;
+  color: #fff;
+  background: black;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.level {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px 0;
 }
