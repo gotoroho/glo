@@ -10,10 +10,6 @@ html, body {
   overflow: hidden;
 }
 
-.start {
-  position: absolute;
-}
-
 .hide {
   display: none;
 }
@@ -53,4 +49,37 @@ html, body {
   background-color: #fff;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.start {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  text-align: center;
+  z-index: 200;
+  color: #fff;
+  font-size: 1.5rem;
+  background: black;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+
+.score {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  z-index: 200;
+  font-size: 1.5rem;
+  color: skyblue;
+  background-color: black;
+  font-family: sans-serif;
+  font-weight: 500;
 }
