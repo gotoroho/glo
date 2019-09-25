@@ -77,6 +77,9 @@ function startGame() {
 	audio.volume = 0.1;
 	audio.play();
 	gameArea.innerHTML = '';
+	if (localStorage.getItem('best score') == null) {
+		localStorage.setItem('best score', '0');
+	}
 	score.childNodes[5].textContent = 'Best score: ' + localStorage.getItem('best score');
 	car.style.left = gameArea.offsetWidth / 2;
 	car.style.top = 'auto';
